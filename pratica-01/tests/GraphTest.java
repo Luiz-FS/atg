@@ -13,13 +13,6 @@ public class GraphTest {
 	private String file3 = "src/sample_weighted_graph2.txt";
 	private Graph g, weightedG, weightedG2;
 
-    //exemplos de grafos
-    private String fileTest1 = "src/smallGraph1.txt";
-    private String fileTest2 = "src/graphNotConnected.txt";
-    private String fileTest3 = "src/bigGraph1.txt";
-
-    private Graph graph1, graph2, graph3;
-
     @BeforeEach
 	public void setUp() throws IOException {
 		g = GraphCreator.createGraph(file);
@@ -83,17 +76,6 @@ public class GraphTest {
 	@Test
 	public void testGetEdgeNumber() {
 		assertEquals(5, g.getEdgeNumber());
-
-        graph1 = GraphCreator.createGraph(fileTest1);
-        graph2 = GraphCreator.createGraph(fileTest2);
-        graph3 = GraphCreator.createGraph(fileTest3);
-
-        // grafo normal conectado com mesmo numero de vertices e arestas
-        assertEquals(2, graph1.getMeanEdge());
-        // grafo desconectado com mesmo numero de vertices e arestas
-        assertEquals(2, graph2.getMeanEdge());
-        // grafo com numero de arestas maior que número de vertices
-        assertEquals(2.53, graph3.getMeanEdge());
 	}
 	
 	@Test
