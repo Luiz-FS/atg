@@ -12,8 +12,8 @@ public class GraphTest {
 	private String file2 = "src/sample_weighted_graph.txt";
 	private String file3 = "src/sample_weighted_graph2.txt";
 	private Graph g, weightedG, weightedG2;
-	
-	@BeforeEach
+
+    @BeforeEach
 	public void setUp() throws IOException {
 		g = GraphCreator.createGraph(file);
 		weightedG = GraphCreator.createGraph(file2);
