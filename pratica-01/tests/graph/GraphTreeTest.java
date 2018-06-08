@@ -54,7 +54,7 @@ class GraphTreeTest {
 				"5 - 2 4");
     	
     	//teste grafo grando sem peso
-    	//A partir do nivel 4, o calculo do nivel está errado
+    	//A partir do nivel 4, o calculo do nivel estÃ¡ errado
     	assertNotEquals(GraphTree.mst(graph4), "1 - 0 -\n" +
 				"10 - 3 3\n" +
 				"11 - 4 10\n" + 
@@ -72,8 +72,8 @@ class GraphTreeTest {
 				"9 - 3 1");
     	
     	//teste grafo grando com pesos positivos e negativos
-    	//A partir do nivel 4, o calculo do nivel está errado
-    	//Monta a MST da maneira correta, porém a escolha da ordem dos nós está diferente da sugerida pelo algoritimo
+    	//A partir do nivel 4, o calculo do nivel estÃ¡ errado
+    	//Monta a MST da maneira correta, porÃ©m a escolha da ordem dos nï¿½s estï¿½ diferente da sugerida pelo algoritimo
     	assertNotEquals(GraphTree.mst(graph5), "2 - 0 -\n" +
 				"3 - 1 2\n" +
 				"4 - 3 8\n" + 

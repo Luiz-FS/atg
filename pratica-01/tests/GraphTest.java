@@ -2,6 +2,7 @@ import java.io.IOException;
 
 
 import graph.*;
+
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -48,8 +49,7 @@ public class GraphTest {
 	}
 
 	@Test
-	public void testWeightedShortestPathWithNegativeCicle() {
-		String expectedOutput = "O grafo contém um ciclo de pesos negativos.";
+	public void testWeightedShortestPathWithNegativeCicle() {		String expectedOutput = "O grafo contém um ciclo de pesos negativos.";
 
 		assertEquals(expectedOutput, GraphConnectivity.getShortestPathWeighted(weightedG, 1, 5));
 	}
